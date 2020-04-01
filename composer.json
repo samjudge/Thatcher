@@ -1,11 +1,14 @@
 {
     "name": "zombietfk/thatcher",
+    "description" : "A pattern matcher for arguments and arrays of data. Supports callbackw based on passed set",
     "authors": [
         {
-            "name": "zombietfk"
+            "name": "ZombieTfk"
         }
     ],
-    "require": {},
+    "require": {
+       "php" : "^7.2"
+    },
     "autoload" : {
       "psr-4" : {
         "ZombieTfk\\Thatcher\\" : "src/",

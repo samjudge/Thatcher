@@ -1,0 +1,22 @@
+{
+    "name": "zombietfk/thatcher",
+    "authors": [
+        {
+            "name": "zombietfk"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+      "psr-4" : {
+        "ZombieTfk\\Thatcher\\" : "src/",
+        "ZombieTfk\\Thatcher\\Tests\\" : "tests/"
+      },
+      "files": [
+        "src/Util/ArrayUtil.php",
+        "src/Aliases/Pattern.php",
+        "src/Aliases/Match.php",
+        "src/Aliases/When.php",
+        "src/Symbols/Aliases/_.php"
+      ]
+    }
+}

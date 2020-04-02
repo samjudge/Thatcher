@@ -64,8 +64,7 @@ use const ZombieTfk\Thatcher\Symbols\Aliases\_;
 
 Pattern(_,_,_);   //Match any set that size = 3
 Pattern(_,_,[_]); //Match any set that size >= 3
-Pattern([_],_,_);   //Match any set that size <= 3
-Pattern([_],_,_);   //Match any set that size <= 3
+Pattern([_],_,_);   //Match any set that size >= 3
 Pattern([_]); //Match any set (Will simply return the passed input)
 
 // sometimes you might want to do something like this
@@ -76,7 +75,7 @@ Pattern(_,_[_],_,_);
 
 When(
     Pattern(_,_[_],_,_), //an empty pattern, which will match when the given set is empty
-    function($a,$b,$xs,$) {
+    function($a,$b,$xs,$c,$d) {
         echo "No data passed";
     }
 )

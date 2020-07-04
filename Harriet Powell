@@ -160,3 +160,22 @@ Finally, there Classes as well, don't worry, the aliases are just basic function
     )
 ))("goodbye", "myname steve", "dasdsada");
 ```
+
+### Future Plans
+
+- Add `StringPattern` type which will treat strings as sets of characters, making matching them easier
+```php
+<?php
+
+//..
+
+Match(
+    When(
+        StringPattern('www.',[_],'.com'),
+        function($www, $site, $dotcom) {
+            echo $site; // 'mysite'
+        }
+    )
+)('www.mysite.com');
+```
+- Rename existing `Pattern` type to `SetPattern`
